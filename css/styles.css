@@ -57,6 +57,21 @@ img {
 .white {
   font-style: normal;
 }
+.accent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.accent::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color);
+  border-radius: 2px;
+}
 .link-contact-head {
   display: flex;
   align-items: center;
@@ -85,7 +100,6 @@ img {
 .benefits-h {
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #212121;
@@ -95,16 +109,16 @@ img {
 }
 .nav {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 2px;
   font-style: normal;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #000;
 }
 .navbar .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 46px;
 }
 .link-contact,
 .link-contact-head {
@@ -132,7 +146,7 @@ img {
   background-size: cover;
 }
 .header {
-  border-bottom: Solid #ececec;
+  border-bottom: 1px Solid #ececec;
 }
 .header-content {
   display: flex;
@@ -228,6 +242,27 @@ img {
 .products {
   padding-top: 0;
   padding-bottom: 94px;
+}
+.item-products {
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.index {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .products-h,
 .constantly-h {
@@ -419,6 +454,25 @@ img {
   text-align: start;
   font-size: 16px;
   line-height: 1.9;
+}
+.hover-before {
+  position: relative;
+  width: 370px;
+}
+.box-hover {
+  position: absolute;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+.portfolio-link:hover .box-hover {
+  opacity: 1;
 }
 .foot-contacts {
   display: flex;
