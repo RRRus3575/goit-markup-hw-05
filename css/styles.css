@@ -53,17 +53,17 @@ img {
 .white:focus,
 .white:hover {
   color: var(--color);
-  transition: var(--time) var(--timing);
 }
 .link-contact-head,
 .link-contact,
 .white {
   font-style: normal;
 }
-.accent {
+.nav.accent {
   position: relative;
   display: flex;
   justify-content: center;
+  color: var(--color);
 }
 .accent::after {
   content: "";
@@ -108,6 +108,7 @@ img {
   color: #212121;
 }
 .benefits-p {
+  line-height: 1.71;
   color: #757575;
 }
 .nav {
@@ -119,6 +120,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #000;
+  transition: color var(--time) var(--timing);
 }
 .navbar .item:not(:last-child) {
   margin-right: 46px;
@@ -129,6 +131,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: color var(--time) var(--timing);
 }
 .overlay {
   max-width: 1600px;
@@ -218,9 +221,14 @@ img {
   font-size: 16px;
   line-height: 1.9;
   border: none;
-  background: var(--color);
+  background-color: var(--color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--time) var(--timing);
+}
+.button-hero:hover,
+.button-hero:focus {
+  background-color: #188ce8;
 }
 .section {
   padding-top: 94px;
@@ -328,6 +336,8 @@ img {
   padding: 12px;
   color: #757575;
   border-radius: 25px;
+  transition: color var(--time) var(--timing);
+  transition: background-color var(--time) var(--timing);
 }
 .msg-icon {
   fill: currentColor;
@@ -338,7 +348,6 @@ img {
 .link-msg-foot:focus {
   background-color: var(--color);
   color: #ffffff;
-  transition: var(--time) var(--timing);
 }
 .msg-icon {
   width: 20px;
@@ -371,7 +380,6 @@ img {
 .constantly-link:focus {
   color: var(--color);
   border: 1px solid var(--color);
-  transition: var(--time) var(--timing);
 }
 
 .constantly-link {
@@ -382,6 +390,7 @@ img {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: color var(--time) var(--timing);
 }
 .footer {
   padding-top: 60px;
@@ -391,6 +400,7 @@ img {
 }
 .white {
   color: #ffffff;
+  transition: color var(--time) var(--timing);
 }
 .logo-foot {
   display: block;
@@ -417,6 +427,8 @@ img {
   color: #212121;
   border: none;
   border-radius: 4px;
+  transition: color var(--time) var(--timing);
+  transition: background-color var(--time) var(--timing);
 }
 .all-btn {
   padding: 6px 25px;
@@ -427,7 +439,6 @@ img {
   background-color: var(--color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--time) var(--timing);
 }
 .services {
   display: flex;
@@ -450,12 +461,6 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-.case:hover,
-.case:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: var(--time) var(--timing);
 }
 .case {
   text-align: start;
@@ -484,7 +489,15 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(101%);
-  transition: transform 250ms ease;
+  transition: transform var(--time) ease;
+}
+.case {
+  transition: box-shadow var(--time) var(--timing);
+}
+.portfolio-link:hover .case,
+.portfolio-link:focus .case {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-link:hover .box-hover,
 .portfolio-link:focus .box-hover {
@@ -503,7 +516,9 @@ img {
   padding: 12px;
   color: #ffffff;
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: color var(--time) var(--timing);
+  transition: background-color var(--time) var(--timing);
 }
 .foot {
   display: flex;
