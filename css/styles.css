@@ -336,8 +336,8 @@ img {
   padding: 12px;
   color: #757575;
   border-radius: 25px;
-  transition: color var(--time) var(--timing);
-  transition: background-color var(--time) var(--timing);
+  transition: color var(--time) var(--timing),
+    background-color var(--time) var(--timing);
 }
 .msg-icon {
   fill: currentColor;
@@ -427,8 +427,9 @@ img {
   color: #212121;
   border: none;
   border-radius: 4px;
-  transition: color var(--time) var(--timing);
-  transition: background-color var(--time) var(--timing);
+  transition: color var(--time) var(--timing),
+    background-color var(--time) var(--timing),
+    box-shadow var(--time) var(--timing);
 }
 .all-btn {
   padding: 6px 25px;
@@ -517,8 +518,8 @@ img {
   color: #ffffff;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: color var(--time) var(--timing);
-  transition: background-color var(--time) var(--timing);
+  transition: color var(--time) var(--timing),
+    background-color var(--time) var(--timing);
 }
 .foot {
   display: flex;
