@@ -565,12 +565,13 @@ footer h2 {
   height: 100%;
   transform: scale(1);
   background: rgba(0, 0, 0, 0.2);
+  transition: transform var(--time) var(--timing),
+    opacity var(--time) var(--timing);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   transform: scale(0);
-  transition: transform var(--time) var(--timing);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
