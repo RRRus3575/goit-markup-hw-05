@@ -22,9 +22,6 @@ a,
 button {
   cursor: pointer;
 }
-a {
-  text-decoration: none;
-}
 img {
   display: block;
   width: 100%;
@@ -244,8 +241,8 @@ img {
   line-height: 1.9;
   border: none;
   background-color: var(--color);
-  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   transition: background-color var(--time) var(--timing);
 }
 .button-hero:hover,
@@ -556,6 +553,33 @@ footer h2 {
 }
 .foot-wrap {
   margin-left: 70px;
+  margin-right: 93px;
+}
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.subscribe-box input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.subscribe-box input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.icon-airplane {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 .backdrop {
   position: fixed;
@@ -580,6 +604,7 @@ footer h2 {
   position: relative;
   left: 50%;
   top: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
   transition: transform var(--time) var(--timing);
   width: 528px;
@@ -605,4 +630,58 @@ footer h2 {
 .icon-close {
   width: 18px;
   height: 18px;
+}
+.button-form {
+  min-width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-modal {
+  color: #757575;
+}
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1, 16;
+  letter-spacing: 0.01em;
+}
+.terms-submit {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+.terms-deal {
+  color: var(--color);
+}
+.terms-submit input {
+  margin-right: 8px;
+}
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-list label {
+  margin-bottom: 4px;
+}
+.form-list input {
+  height: 40px;
+}
+.form-list textarea {
+  padding: 12px 16px;
+  resize: none;
+}
+
+input,
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
